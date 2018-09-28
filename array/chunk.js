@@ -3,7 +3,7 @@
  * will be the remaining elements.
  */
 
-module.exports = chunk = function(arr, size) {
+module.exports = function chunk(arr, size) {
   const newArr = [...arr];
   const emptyArr = [];
   function chunkArray(arr) {
@@ -15,4 +15,4 @@ module.exports = chunk = function(arr, size) {
   }
   chunkArray(newArr);
   return emptyArr;
-}
+};
