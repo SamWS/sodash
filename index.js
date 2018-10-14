@@ -2,13 +2,17 @@
 const chunk = require('./array/chunk');
 const compact = require('./array/compact');
 const concat = require('./array/concat');
+const difference = require('./array/difference');
+const differenceBy = require('./array/differenceBy');
+const drop = require('./array/drop');
 
 const sodash = {
   chunk,
   compact,
-  concat
+  concat,
+  difference,
+  differenceBy,
+  drop
 };
 
-console.log(sodash.chunk([1,2,3,4,5,6,7,8,9,10,11], 2));
-console.log(sodash.compact([1, 'sam', false, 0, undefined, null, 2]));
-console.log(sodash.concat([1], 2, [3], [[4]]));
+module.exports = sodash;
