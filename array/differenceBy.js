@@ -6,9 +6,8 @@
  */
 
 module.exports = function differenceBy(arr1, arr2, iter) {
-  const iteredArr1 = arr1.map(x => iter(x));
-  const iteredArr2 = arr2.map(x => iter(x));
-  return iteredArr1.filter(x => {
-    return iteredArr2.indexOf(x) === -1 ? x : null
-  });
+    const iteredArr2 = arr2.map(x => iter(x));
+    return arr1.filter(x => {
+      return iteredArr2.indexOf(iter(x)) === -1 ? x : null
+    });
 };
