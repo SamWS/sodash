@@ -6,8 +6,22 @@
  */
 
 module.exports = function differenceBy(arr1, arr2, iter) {
-    const iteredArr2 = arr2.map(x => iter(x));
+    const iteredArr2 = arr2.map(x => {
+      if (Object.prototype.toString.call(x) === "[object Object]") {
+        return JSON.stringify(x);
+      } else if (Object.prototype.toString.call(iter) === "[object Function]") {
+        return iter(x)
+      } else {
+        return x
+      }
+    });
     return arr1.filter(x => {
-      return iteredArr2.indexOf(iter(x)) === -1 ? x : null
+      if (Object.prototype.toString.call(x) === "[object Object]") {
+        return iteredArr2.indexOf(JSON.stringify(x)) === -1 ? x : null
+      } else if (Object.prototype.toString.call(iter) === '[object Function]') {
+        return iteredArr2.indexOf(iter(x)) === -1 ? x : null
+      } else {
+        return iteredArr2.indexOf(x) === - 1 ? x : null
+      }
     });
 };
