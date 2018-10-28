@@ -5,6 +5,7 @@ const concat = require('./array/concat');
 const difference = require('./array/difference');
 const differenceBy = require('./array/differenceBy');
 const drop = require('./array/drop');
+const dropRight = require('./array/dropRight');
 
 const sodash = {
   chunk,
@@ -12,7 +13,8 @@ const sodash = {
   concat,
   difference,
   differenceBy,
-  drop
+  drop,
+  dropRight
 };
 
 module.exports = sodash;
