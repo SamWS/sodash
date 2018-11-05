@@ -6,6 +6,8 @@ const difference = require('./array/difference');
 const differenceBy = require('./array/differenceBy');
 const drop = require('./array/drop');
 const dropRight = require('./array/dropRight');
+const dropRightWhile = require('./array/dropRightWhile');
+const fill = require('./array/fill');
 
 const sodash = {
   chunk,
@@ -14,7 +16,9 @@ const sodash = {
   difference,
   differenceBy,
   drop,
-  dropRight
+  dropRight,
+  dropRightWhile,
+  fill
 };
 
 module.exports = sodash;
