@@ -1,0 +1,23 @@
+{
+  "name": "sodash",
+  "version": "1.0.0",
+  "description": "**Sodash**",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamWS/sodash.git"
+  },
+  "author": "SamWS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamWS/sodash/issues"
+  },
+  "homepage": "https://github.com/SamWS/sodash#readme",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "jest": "^23.6.0"
+  }
+}
