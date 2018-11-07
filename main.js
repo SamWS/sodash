@@ -1,5 +1,5 @@
 const chunk = require('./array/chunk/index');
-const compact = require('./array/compact');
+const compact = require('./array/compact/index');
 const concat = require('./array/concat');
 const difference = require('./array/difference');
 const differenceBy = require('./array/differenceBy');

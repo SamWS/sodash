@@ -2,7 +2,6 @@ const _ = require('./main.js');
 
 // console.log(_.dropRightWhile(users, function(o) { return !o.active; }));
 
-// console.log(_.compact([1, 'sam', false, 0, undefined, null, 2]));
 // console.log(_.concat([1], 2, [3], [[4]]));
 // console.log(_.difference([2, 1], [2, 3]));
 // console.log(_.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor));
