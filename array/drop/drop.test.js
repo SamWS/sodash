@@ -17,6 +17,6 @@ describe('drop', () => {
 
   test('nothing is removed from array if zero is passed in', () => {
     expect(drop(arrOne, 0)).toEqual(arrOne);
-  })
+  });
 
 });

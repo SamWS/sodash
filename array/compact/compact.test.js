@@ -16,6 +16,6 @@ describe('compact', () => {
     const truthArray = [1, 'sam', true];
 
     expect(compact(truthArray).length).toBe(3);
-  })
+  });
 
 });
