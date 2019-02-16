@@ -19,12 +19,11 @@ module.exports = function findIndex(arr, argument) {
         }
     }
     if (Object.prototype.toString.call(argument) === "[object Array]" ) {
-        const props = argument[0];
-        const value = argument[1];
-        const obj = { props: value };
-        return obj
+        const objProperty = argument[0];
+        const objValue = argument[1];
+
         for (var i = 0; i < arr.length; i++) {
-            if (JSON.stringify(arr[i]) === JSON.stringify(obj)) {
+            if (arr[i][objProperty] === objValue) {
                 return i
             }
         }
