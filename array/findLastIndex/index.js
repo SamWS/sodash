@@ -1,25 +1,25 @@
-/* This method is like _.find except that it returns the index of
- * the first element predicate returns truthy for instead of the
- * element itself.
+/* This method is This method is like _.findIndex except
+ * that it iterates over elements of collection from
+ * right to left.
  */
 
-module.exports = function findIndex(arr, argument) {
+module.exports = function findLastIndex(arr, argument) {
   if (Object.prototype.toString.call(argument) === "[object String]") {
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = arr.length - 1; i >= 0; i--) {
       if (arr[i][argument]) {
         return i
       }
     }
   }
   if (Object.prototype.toString.call(argument) === "[object Function]") {
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = arr.length - 1; i >= 0; i--) {
       if (argument(arr[i])) {
         return i
       }
     }
   }
   if (Object.prototype.toString.call(argument) === "[object Object]" ) {
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = arr.length - 1; i >= 0; i--) {
       if (JSON.stringify(arr[i]) === JSON.stringify(argument)) {
         return i
       }
@@ -29,7 +29,7 @@ module.exports = function findIndex(arr, argument) {
     const objProperty = argument[0];
     const objValue = argument[1];
 
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = arr.length - 1; i >= 0; i--) {
       if (arr[i][objProperty] === objValue) {
         return i
       }
