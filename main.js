@@ -9,6 +9,7 @@ const dropRightWhile = require('./array/dropRightWhile');
 const fill = require('./array/fill');
 const findIndex = require('./array/findIndex');
 const findLastIndex = require('./array/findLastIndex');
+const head = require('./array/head');
 
 const sodash = {
   chunk,
@@ -22,6 +23,7 @@ const sodash = {
   fill,
   findIndex,
   findLastIndex,
+  head,
 };
 
 module.exports = sodash;
