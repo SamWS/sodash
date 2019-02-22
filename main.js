@@ -10,6 +10,7 @@ const fill = require('./array/fill');
 const findIndex = require('./array/findIndex');
 const findLastIndex = require('./array/findLastIndex');
 const head = require('./array/head');
+const indexOf = require('./array/indexOf');
 
 const sodash = {
   chunk,
@@ -24,6 +25,7 @@ const sodash = {
   findIndex,
   findLastIndex,
   head,
+  indexOf,
 };
 
 module.exports = sodash;
