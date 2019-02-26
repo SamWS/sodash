@@ -11,6 +11,7 @@ const findIndex = require('./array/findIndex');
 const findLastIndex = require('./array/findLastIndex');
 const head = require('./array/head');
 const indexOf = require('./array/indexOf');
+const initial = require('./array/initial');
 
 const sodash = {
   chunk,
@@ -26,6 +27,7 @@ const sodash = {
   findLastIndex,
   head,
   indexOf,
+  initial,
 };
 
 module.exports = sodash;

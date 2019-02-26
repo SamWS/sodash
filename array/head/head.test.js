@@ -6,10 +6,10 @@ describe('head', () => {
     const simpleArray = [1, 2, 3];
 
     expect(head(simpleArray)).toBe(1)
-  })
+  });
 
   it('should return undefined if passed an empty array', () => {
     expect(head([])).toBeUndefined();
-  })
+  });
   
 });
