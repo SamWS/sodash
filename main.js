@@ -12,6 +12,7 @@ const findLastIndex = require('./array/findLastIndex');
 const head = require('./array/head');
 const indexOf = require('./array/indexOf');
 const initial = require('./array/initial');
+const intersection = require('./array/intersection');
 
 const sodash = {
   chunk,
@@ -28,6 +29,7 @@ const sodash = {
   head,
   indexOf,
   initial,
+  intersection,
 };
 
 module.exports = sodash;
