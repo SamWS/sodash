@@ -13,6 +13,7 @@ const head = require('./array/head');
 const indexOf = require('./array/indexOf');
 const initial = require('./array/initial');
 const intersection = require('./array/intersection');
+const intersectionBy = require('./array/intersectionBy');
 
 const sodash = {
   chunk,
@@ -30,6 +31,7 @@ const sodash = {
   indexOf,
   initial,
   intersection,
+  intersectionBy,
 };
 
 module.exports = sodash;

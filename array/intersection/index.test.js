@@ -18,6 +18,6 @@ describe('intersection', () => {
     const arr2 = [4, 5, 6];
     
     expect(intersection(arr1, arr2)).toEqual([]);
-  })
+  });
 
 });
