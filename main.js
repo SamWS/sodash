@@ -15,6 +15,7 @@ const initial = require('./array/initial');
 const intersection = require('./array/intersection');
 const intersectionBy = require('./array/intersectionBy');
 const join = require('./array/join');
+const last = require('./array/last');
 
 const sodash = {
   chunk,
@@ -33,7 +34,8 @@ const sodash = {
   initial,
   intersection,
   intersectionBy,
-  join
+  join,
+  last,
 };
 
 module.exports = sodash;
