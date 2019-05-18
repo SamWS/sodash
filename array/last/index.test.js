@@ -6,6 +6,7 @@ describe('last', () => {
     const arr = ['a', 'b', 'c'];
 
     expect(last(arr)).toEqual('c');
+    expect(arr).toEqual(['a', 'b', 'c']);
   });
 
 });
