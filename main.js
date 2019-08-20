@@ -37,7 +37,8 @@ const sodash = {
   intersectionBy,
   join,
   last,
-  lastIndexOf
+  lastIndexOf,
+  nth,
 };
 
 module.exports = sodash;
